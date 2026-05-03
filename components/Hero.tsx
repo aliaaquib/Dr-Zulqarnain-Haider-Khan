@@ -4,8 +4,13 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const actions = [
-  { label: "Instagram", href: "https://www.instagram.com", primary: true, external: true },
-  { label: "Email", href: "mailto:hello@leilamaren.com", icon: "mail" },
+  {
+    label: "Online Consultation",
+    href: "https://www.marham.pk/doctors/bahawalpur/general-physician/dr-zulqarnain-haider-khan",
+    primary: true,
+    external: true
+  },
+  { label: "Email", href: "mailto:zhyderkhan940@gmail.com", icon: "mail" },
   { label: "YouTube", href: "https://www.youtube.com/@leilamaren", external: true, icon: "youtube" },
   { label: "Facebook", href: "https://www.facebook.com", external: true, icon: "facebook" },
   { label: "LinkedIn", href: "https://www.linkedin.com", external: true, icon: "linkedin" }
@@ -19,7 +24,7 @@ function ProfileAvatar({ compact = false }: { compact?: boolean }) {
       }`}
     >
       <Image
-        src="/avatar.png"
+        src="/avatar-dr-zulqarnain.jpeg"
         alt="Dr. Zulqarnain Haider Khan"
         fill
         sizes={compact ? "48px" : "(min-width: 640px) 68px, 64px"}
